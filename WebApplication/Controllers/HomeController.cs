@@ -20,7 +20,7 @@ namespace WebApplication.Controllers
             _logger = logger;
         }
         
-        //[Authorize(Roles = "Administrator")]
+        [Authorize(Roles = "Administrator")]
         public IActionResult Index()
         {
             return View();
